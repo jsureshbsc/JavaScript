@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- sample -->
+<!-- <body>
+   <h5 id ="h">Multiplication table</h5>
+    <div id="name" style="white-space: pre-line">hello </div>
+    
+     <script src="./javascriptbasic.js"></script> 
+   <script src="./dom.js"></script>  
+</body> -->
+<!-- exercise - 1 -->
+<body>
+    
+
+
+    <h1 id="title" >Hello world</h1>
+    <button onclick="titles()" onchange="change()">Title</button>
+    <h2 id="eventChange" >hello world </h2>
+    <script>
+        // h1 tag on click
+        let click = document.getElementById("title");
+          
+        function titles(){
+         click.textContent="Bye world"
+        }
+
+        //h2 tag is onchange()
+        // let eventChange = document.getElementById("eventChange");
+        function change(){
+            click.textContent="bye world";
+        }
+    </script>
+</body>
+</html>
