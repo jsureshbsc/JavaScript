@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="title"> Hello World</h1>
+    <button onclick="buttonClick()">Exit</button>
+    <div>
+        <label for="option">Please Choose the location</label>
+
+        <select name="location" id="options">
+            <option value=null >Select Location...!</option>
+            <option value="tamil nadu">Tamil Nadu</option>
+            <option value="bengaluru">Bengaluru</option>
+            <option value="goa">Goa</option>    
+        </select> 
+        <p id="selected"></p>
+
+    </div>
+    
+
+    <script>
+        //onclick
+        let title = document.getElementById("title");
+        console.log(title.textContent);
+        function buttonClick(){
+           if( title.textContent =="Bye World "){
+             title.textContent = "Hello World";
+           }else{
+             title.textContent = "Bye World ";
+           }
+        }
+        // onchange
+
+        let select = document.getElementById("options");
+        console.log(select.value);
+        let value =select.value
+        selectedDisplayed(value);
+
+        function selectedDisplayed(value){
+            let selected = document.getElementById("selected")
+            selected.textContent = value;
+        }
+    
+    </script>
+    
+</body>
+</html>
