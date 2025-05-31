@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>Window and Document Events Demo</h1>
+  <p>Try resizing, scrolling, or switching tabs to trigger events.</p>
+
+  <div id="status">Waiting for events...</div>
+
+
+    <script>
+        const status = document.getElementById("status");
+       
+       
+        window.addEventListener("load",()=>{
+            status.textContent="load"
+        });
+
+        // window.addEventListener("unload",()=>{
+        //     status.textContent="unload"
+        // })
+        window.addEventListener("resize",()=>{
+             status.textContent = "Window resized: " + window.innerWidth + " x " + window.innerHeight;
+        })
+        
+    </script>
+</body>
+</html>

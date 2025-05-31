@@ -165,6 +165,51 @@ Function - a function is a block of reusable code that performs a specific task
 
 			});
 
+Event Handlers :
+---------------
+	1) Mouse Events
+	-----------------
+		onclick --> when element is clicked
+		ondblclick --> when double- clicked
+		onmousedown --> mouse button is pressed down
+		onmouseup --> mouse button is released
+		onmousemove --> mouse is moved
+		onmouseover --> mouse enters the element
+		onmouseout --> mouse leaves the element
+
+	2) key events
+	---------------
+		okkeydown --> key is pressed
+		onkeypress --> key is pressed
+		onkeyup --> key is released	
+
+	3) form events
+	-------------------
+		onsubmit --> form is sbmitted
+		onreset --> form is reset
+		onchange --> form input like select/text changed
+		oninput --> value is being typed in inputfield
+		onfocus --> element gets focus
+		onblur --> element loses foces
+
+	4) window & doucment Events
+	-----------------------------
+		onload --> page finishes loading
+		onuload --> page is unloaded
+		onresize --> window is resized
+		onscroll --> page or element is scrolled
+		onerror --> error occurs while loading
+	
+	5) Drag & drop events
+	------------------------
+		ondrag - element is being dragged
+		ondragstart - drag start
+		ondragend - drag end
+		ondragover - drag is over a traget
+		ondragenter - drag enter a valid target
+		ondragleave - drag leaves a valid target
+		ondrop - element is dropped
+
 
 date
 REgExp

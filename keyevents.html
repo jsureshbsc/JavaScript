@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <input id="inputbox" type="text" value="a"  onkeypress=" keypressed()" onkeyup="keyrelesed()">
+        <p id="keypress"></p>
+        <p id="keyrelese"></p>
+
+    <script>
+        let keypressed =()=>{
+            let inputbox = document.getElementById("inputbox");
+            let keypress = document.getElementById("keypress");
+            let keyrelese = document.getElementById("keyrelese");
+            keypress.textContent=`now key pressed is ${inputbox.value}`;
+            inputbox.value="";
+        }
+        let keyrelesed =()=>{
+            let inputbox = document.getElementById("inputbox");
+            let keyrelese = document.getElementById("keyrelese");
+            keyrelese.textContent=`now key relesed is ${inputbox.value}`;
+            inputbox.value="";
+        }
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Drag and Drop Example</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #3498db;
+      color: white;
+      text-align: center;
+      line-height: 100px;
+      margin: 20px;
+      cursor: grab;
+    }
+
+    .dropzone {
+      width: 300px;
+      height: 200px;
+      border: 2px dashed #aaa;
+      margin-top: 30px;
+      text-align: center;
+      line-height: 200px;
+      color: #555;
+    }
+
+    .dropzone.hovered {
+      background-color: #e0f7fa;
+      border-color: #3498db;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Simple Drag and Drop</h2>
+
+  <div id="dragBox" class="box" draggable="true">Drag me</div>
+
+  <div id="dropArea" class="dropzone">Drop here</div>
+
+  <script>
+    const dragBox = document.getElementById("dragBox");
+    const dropArea = document.getElementById("dropArea");
+
+    // When drag starts
+    dragBox.addEventListener("dragstart", function (e) {
+      e.dataTransfer.setData("text/plain", "dragBox");
+    });
+
+    // When something is over drop area
+    dropArea.addEventListener("dragover", function (e) {
+      e.preventDefault(); // Needed to allow drop
+      dropArea.classList.add("hovered");
+    });
+
+    // When it leaves drop area
+    dropArea.addEventListener("dragleave", function () {
+      dropArea.classList.remove("hovered");
+    });
+
+    // When dropped
+    dropArea.addEventListener("drop", function (e) {
+      e.preventDefault();
+      const data = e.dataTransfer.getData("text/plain");
+      if (data === "dragBox") {
+        dropArea.appendChild(dragBox);
+        dragBox.style.margin = "auto";
+        dropArea.classList.remove("hovered");
+      }
+    });
+  </script>
+
+</body>
+</html>
