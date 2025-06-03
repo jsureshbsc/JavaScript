@@ -1,0 +1,112 @@
+ /* exercsie -1 */
+/*
+ div{
+    background-color: blue;
+    height: 150px;
+    width: 150px;
+}
+#one{
+
+}
+#two{
+    margin-top: 45px;
+
+} */
+
+/* exericse -2 */
+/* div{
+    height: 200px;
+    width: 200px ;
+    background-color: black;
+    color: white;
+    padding-top: 45px;
+    padding-left: 35px;
+    
+} */
+
+ /* exerciese -3 */
+ /* div{
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    border: 10px, solid, red;
+    margin: 45px;
+ } */
+
+  /* exerciese -4 */
+/* 
+  h1{
+    background-color: black;
+    color: yellow;
+    height: 50px;
+    width: auto;
+    text-align: center;
+  }
+  p{
+     height: auto;
+    width: auto;
+    background-color: rgb(41, 26, 209);
+    color: wheat;
+    border: 10px, solid, black;
+    padding: 25px;
+    text-align: center;
+  } */
+
+/* exerciese -5 */
+
+/* #div1{
+     background-color: black;
+     display: inline-block;
+     height: 200px;
+    width:  200px;
+}
+#div2{
+    display: inline-block;
+    background-color: red;
+     height: 200px;
+    width:  200px;
+}
+h1{
+    display: inline;
+}
+#h12{
+    background-color: yellow;
+}
+#h11{
+    background-color: blue;
+} */
+
+  /* exercerise-6  */
+  /* ul{
+    background-color: aquamarine;
+    width: auto;
+    text-align: center;
+    padding: 15px;
+  }
+  li{
+    list-style-type: none;
+    display: inline;
+    background-color: rgb(91, 91, 255);
+    margin: 45px;
+    border: 5px, solid, pink ;
+  } */
+
+  /* exercerise-6 */
+ nav{
+    background-color: black;
+    /* padding: 10px;  */
+ }
+  h1{
+    display: inline;
+    color: white;
+  }
+  ul{
+    display: inline;
+    margin:450px;
+  }
+  li{
+    padding: 10px;
+    display: inline;
+    color: white;
+   
+  }

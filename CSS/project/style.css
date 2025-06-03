@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  background-color: #f0f2f5;
+  gap: 40px;
+    margin-top: 100px;
+}
+
+#logo{
+    display: inline-block;
+    width: 368px;
+    padding-right:100px;
+    padding-top: 20px;
+}
+#logo img{
+    width: 350px;
+    height: 200px;
+}
+#logo p{
+    width: 368px;
+    height: 76px;
+    font-size: 24px;
+}
+
+
+#login input{
+    width: 363px;
+    height: 56px;
+    display: block;
+    margin-top: 10px;
+    font-size: 18px; 
+    border: 1px, solid, #7a7a7a;
+    
+}
+#login input:focus{
+    border: 3px, solid, #0866ff;
+}
+#input_btn{
+    background-color: #0866ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#forgettenpassword{
+    font-size: 14px;
+    color: #0866ff;
+    text-decoration: none;
+    text-align: center;
+    
+}
+#createNewaccount{
+    width: 200px;
+    height: 56px;
+    border: none;
+    border-radius: 5px;
+    background-color: #42b72A;
+    font-size: 17px;
+    color: white;
+}
+#createNewaccount:hover{
+    background-color: #23840f;
+    transition: 2s;
+}
+#createpage a{
+    display: inline;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    color: black;
+    justify-content: center;
+}
+#inputfield{
+     width: 300px;
+    height:auto ;   
+    text-align: center;
+}
+#createpage p{
+    display: inline;
+    width: 396px;
+    font-size: 17px;
+    color: black;
+}
+#usernamepassword{
+    border: 1px solid rgb(138, 135, 135);
+     width: 396px;
+    height:auto ;
+    padding: 45px;
+    background-color: white;
+}
+#login{
+    display: inline-block;
+    width: 396px;
+    padding: 20px;
+
+}
