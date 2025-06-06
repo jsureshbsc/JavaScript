@@ -1,3 +1,117 @@
-nav{
-    border: 1px solid blue;
+nav {
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+}
+
+#aboutstore {
+    display: inline-block;
+}
+
+ul {
+    display: inline-block;    
+}
+
+li {
+    padding-right: 20px;
+    display: inline-block;
+    /* text-align: center; */
+    margin-top: 5px;
+
+}
+li:hover{
+    text-decoration: underline;
+}
+#aboutstore a{
+    text-decoration: none;
+    color: black;
+}
+
+#gmailmore {
+    margin-left: 50%;
+    display: inline-block;
+}
+
+#gmailmore a {
+    padding-left: 15px;
+     text-decoration: none;
+    color: black;
+}
+#gmailmorelogo i{
+    margin-top: 5px;
+     padding-right: 20px;
+    padding: 5px;
+    display: inline-block;
+}
+#gmailmore i{
+    font-size: 30px;
+    color: #1f1e1e;
+    display: inline-block;
+   
+}
+#gmailmore i:hover{
+    background-color: rgb(181, 181, 178);
+    border-radius: 45%;
+    text-decoration:none;
+}
+#googlelogo{
+    text-align: center;
+    margin-top: 1%;
+    height: 175px;
+    width: 966px;
+}
+#googlelogo p{
+    display: inline-block;
+    font-size: 92px;
+    font-family: Arial;
+    font-weight: 520;
+}
+#googlelogo #g1{
+    color: blue;
+}
+#googlelogo #o1{
+    color: red;
+}
+#googlelogo #o2{
+    color: orange;
+}
+#googlelogo #g2{
+    color: blue;
+}
+#googlelogo #l{
+    color: green;
+}
+#googlelogo #e{
+    color: red;
+}
+#searchbar{
+    margin-left: 20%;
+     margin-top: 7%;
+    border: 1px solid rgb(77, 74, 74);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    box-shadow: 5px 5px 5px 5px rgba(109, 106, 106, 0.5);
+    width: 582.4px;
+    height:55px ;
+}
+#searchbar input{
+    border: none;
+    width: 443px;
+    height: 45px;
+}
+#searchbar div{
+    padding-top: 11px;
+     width: 40px;
+     height: 44px;
+}
+#btns {
+       margin-left: 30%;
+      display: inline;
+}
+#btns input{
+     margin-bottom: 20%;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
 }

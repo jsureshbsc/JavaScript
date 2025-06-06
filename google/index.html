@@ -6,46 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
 
-<link rel="stylesheet" href="./script.js">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link rel="stylesheet" href="./style.css">
 
 <body>
+    <!-- navbar -->
     <nav>
-        <div id="aboutStore">
+        <div id="aboutstore">
             <ul>
-                <a href="">
-                    <li>About</li>
-                </a>
-                <a href="">
-                    <li>Store</li>
-                </a>
+                <li> <a href="">About</a></li>
+                <li><a href="">Store</a>
+                </li>
             </ul>
         </div>
         <div id="gmailmore">
-            <ul>
-               <a href="">
-                 <li>Gmail</li>
-               </a>
-                <a href="">
-                    <li>Images</li>
-                </a>
-               <a href="">
-                 <li>
-                    <i class='bx bxs-medical-flask'> Search Labs</i>
-                </li>
-               </a>
-                <li>
-                    <i class='bx bx-category'></i>
-                </li>
-                <li>
-                    <i class='bx  bxs-user-circle'  ></i> 
-                </li>
-                
+            <ul >
+              <divstyle="display: inline-block;">
+                  <li><a href="">Gmail</a></li>
+                <li><a href="">Images</a></li>
+              </div>
+                <div style="display: inline-block;" id="gmailmorelogo">
+                    <i class="material-icons">science</i>
+                    <i class="material-icons">apps</i>
+                    <i class="material-icons">account_circle</i>
+                </div>
             </ul>
         </div>
-
     </nav>
+    <!-- logo -->
+    <div id="googlelogo">
+        <p id="g1">G</p>
+        <p id="o1">o</p>
+        <p id="o2">o</p>
+        <p id="g2">g</p>
+        <p id="l">l</p>
+        <p id="e">e</p>
+    </div>
+    <div id="searchbar">
+      <div class="material-icons">search</div>
+      <input type="text" >
+      <div class="material-icons">mic</div>
+      <div class="material-icons">center_focus_weak</div>
+
+    </div>
+    <div id="btns">
+        <div style="display: inline;">
+            <input type="button" value="Google Search">
+        </div>
+        <div style="display: inline;">
+            <input type="button" value="I'm Feeling Lucky">
+        </div>
+    </div>
     <script src="./script.js"></script>
 </body>
 
