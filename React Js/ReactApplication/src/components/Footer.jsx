@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { userContext } from "../App";
+
 class Footer extends Component {
   render() {
     let date = new Date();
@@ -9,11 +10,9 @@ class Footer extends Component {
           {({ user }) => {
             return (
               <p>
-                {" "}
-                copyright{user.name}@{date.getFullYear()}
+                © {user.name} @ {date.getFullYear()}
               </p>
             );
-            <p></p>;
           }}
         </userContext.Consumer>
       </footer>
