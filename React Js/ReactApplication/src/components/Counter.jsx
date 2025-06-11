@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+<<<<<<< HEAD
 //button
 const Button = styled.button`
   background-color: red;
@@ -9,6 +10,14 @@ const Button = styled.button`
   border: none;
   cursor: pointer;
 `;
+=======
+let Button = styled.button
+`  background-color :black;
+    color:white;
+    font-size :20px;
+    margin : 5px;
+`
+>>>>>>> 52fd466f5d4974229896e65adb549b712c043dc5
 
 const Counter = () => {
 
@@ -38,6 +47,7 @@ const Counter = () => {
   }
   return (
     <>
+<<<<<<< HEAD
     <h1>Click to rewards🎉✨</h1>
     <p>Total time clicked the button {count}</p>
     <div>
@@ -45,6 +55,11 @@ const Counter = () => {
       <p>total count is :{count}</p>
     </div>
     <Button onClick={()=>{increacseCount()}}>Click me</Button>
+=======
+    <h1>Increment and Decrement value is :{count}</h1>
+    <Button onClick={onadd}>add +1</Button>
+    <Button onClick={onminus}>minus -1</Button>
+>>>>>>> 52fd466f5d4974229896e65adb549b712c043dc5
     </>
   )
 }

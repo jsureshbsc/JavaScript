@@ -1,8 +1,15 @@
 // import './App.css'
+
 import Header from "./components/Header";
 import Content from "./components/Content";
 import Footer from "./components/Footer";
 import { createContext, useContext, useState } from "react";
+import Header from './components/Header';
+import Content from './components/Content';
+import Footer from './components/Footer';
+import ChangingName from './components/ChangingName';
+
+
 
 function App() {
   let [user, setUser] = useState({
@@ -21,6 +28,16 @@ function App() {
       </userContext.Provider>
     </>
   );
+   <>
+    
+    <div className='app'>
+    <Header userName={userName}/>
+    <Content/>
+    <ChangingName/>
+    <Footer/>
+    </div>
+   </>
+  )
 }
 
 export let userContext = createContext();
