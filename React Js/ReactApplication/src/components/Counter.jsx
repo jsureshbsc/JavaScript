@@ -1,4 +1,11 @@
 import React, { useState } from 'react'
+import styled from 'styled-components'
+let Button = styled.button
+`  background-color :black;
+    color:white;
+    font-size :20px;
+    margin : 5px;
+`
 
 const Counter = () => {
     let [count,setCount] = useState(0)
@@ -12,8 +19,8 @@ const Counter = () => {
   return (
     <>
     <h1>Increment and Decrement value is :{count}</h1>
-    <button onClick={onadd}>add +1</button>
-    <button onClick={onminus}>minus -1</button>
+    <Button onClick={onadd}>add +1</Button>
+    <Button onClick={onminus}>minus -1</Button>
     </>
   )
 }
