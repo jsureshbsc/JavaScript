@@ -1,11 +1,10 @@
-import { useState } from "react";
+import { useContext } from "react";
 import styled from "styled-components";
+import { UserContext } from "../App";
+import DiplayDetials from "./DiplayDetials";
 
 const ChangingName = () => {
-  const usernameList = [
-    { name: "suresh", age: 23, gender: "male" },
-    { name: "tamil", age: 23, gender: "male" },
-  ];
+  const { userList, selectedUser, setSelectedUser } = useContext(UserContext);
 
   const Button = styled.button`
     background-color: purple;
@@ -22,30 +21,23 @@ const ChangingName = () => {
     cursor: pointer;
   `;
 
-  const [selectDetails, setDetails] = useState(null);
-
-  const userDetails = (name, age, gender) => {
-    setDetails({ name, age, gender });
-  };
-
   return (
     <>
       <h1>
-        {selectDetails
-          ? `Name: ${selectDetails.name}, Age: ${selectDetails.age}, Gender: ${selectDetails.gender}`
+        {selectedUser
+          ? `Name: ${selectedUser.name}, Age: ${selectedUser.age}, Gender: ${selectedUser.gender}`
           : "Click a button to see details"}
       </h1>
 
-      {usernameList.map((user, index) => (
+      {userList.map((user, index) => (
         <div key={index}>
-          <Button onClick={() => userDetails(user.name, user.age, user.gender)}>
-            {user.name}
-          </Button>
+          <Button onClick={() => setSelectedUser(user)}>{user.name}</Button>
         </div>
       ))}
+
+      <DiplayDetials />
     </>
   );
 };
 
-export default ChangingName;
- 
+exp;
